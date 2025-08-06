@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FastAPI To-Do List</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="container mt-5">
+  <h1 class="mb-4">📝 My To-Do List</h1>
+
+  <form method="post">
+    <div class="row g-2 mb-3">
+      <div class="col-md-2">
+        <input type="number" name="task_id" class="form-control" placeholder="Task ID" required>
+      </div>
+      <div class="col-md-8">
+        <input type="text" name="title" class="form-control" placeholder="Task title" required>
+      </div>
+      <div class="col-md-2">
+        <button type="submit" class="btn btn-success w-100">Add</button>
+      </div>
+    </div>
+  </form>
+
+  <ul class="list-group">
+    {% for task in tasks %}
+    <li class="list-group-item d-flex justify-content-between align-items-center">
+      <div>
+        <strong>#{{ task.id }}</strong>: {{ task.title }}
+      </div>
+      <div>
+        {% if not task.completed %}
+          <a href="/complete/{{ task.id }}" class="btn btn-sm btn-primary">Complete</a>
+        {% else %}
+          <span class="badge bg-success">Done</span>
+        {% endif %}
+        <a href="/edit/{{ task.id }}" class="btn btn-sm btn-warning ms-2">Edit</a>
+        <a href="/delete/{{ task.id }}" class="btn btn-sm btn-danger ms-2">Delete</a>
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+</body>
+</html>
