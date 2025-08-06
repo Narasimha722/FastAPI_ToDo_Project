@@ -47,7 +47,7 @@ With Swagger, you can:
 
 ✅This makes API testing fast and visual — no need for Postman or CURL.
 
-assets\Swagger.png
+![App Screenshot](assets/Swagger.png)
 
 ---
 
@@ -96,7 +96,7 @@ uvicorn main:app --reload
 Visit the app in your browser at:
 👉 http://127.0.0.1:8000
 
-assets\FastAPI_Todo_Home page.png
+![App Screenshot](assets/FastAPI_Todo_Home page.png)
 
 🧪 Features Overview
 ------------------------------
@@ -135,3 +135,4 @@ Handling form submissions in FastAPI
 Building REST endpoints
 
 SQLite database interaction via SQLModel
+
