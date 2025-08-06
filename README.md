@@ -96,7 +96,7 @@ uvicorn main:app --reload
 Visit the app in your browser at:
 👉 http://127.0.0.1:8000
 
-![App Screenshot](assets/FastAPI_Todo_Home page.png)
+![App Screenshot](assets/FastAPI_Todo_Homepage.png)
 
 🧪 Features Overview
 ------------------------------
