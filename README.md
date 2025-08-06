@@ -53,6 +53,7 @@ assets\Swagger.png
 
 ## 📁 Project Structure
 
+```bash
 fastapi_todo_app/
 ├── main.py # Main FastAPI app
 ├── database.py # DB setup and session config
@@ -61,33 +62,44 @@ fastapi_todo_app/
 └── templates/ # HTML templates (Jinja2)
 ├── index.html # Home page for listing/adding tasks
 └── edit.html # Edit task form
-
-
----
+```
 
 ## ⚙️ Installation
 
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/fastapi-todo.git
-cd fastapi-todo
-
+git clone https://github.com/Narasimha722/FastAPI_ToDo_Project.git
+cd FastAPI_ToDo_Project
+```
 
 2. Create virtual environment (optional but recommended)
+
+```bash
 python -m venv venv
 venv\Scripts\activate  # On Windows
-# source venv/bin/activate  # On macOS/Linux
+source venv/bin/activate  # On macOS/Linux
+```
+
 3. Install dependencies
+
+```bash
 pip install -r requirements.txt
+```
+
 ▶️ Running the App
+
+```bash
 uvicorn main:app --reload
+```
+
 Visit the app in your browser at:
 👉 http://127.0.0.1:8000
 
 assets\FastAPI_Todo_Home page.png
 
 🧪 Features Overview
+------------------------------
 Add task with ID + title
 
 Edit task with check/uncheck "completed"
@@ -113,6 +125,7 @@ Uvicorn
 python-multipart
 
 📚 Learnings
+---------------------------------------------------
 How to use FastAPI for full-stack web development
 
 Using Jinja2 templates for dynamic web UI
@@ -122,10 +135,3 @@ Handling form submissions in FastAPI
 Building REST endpoints
 
 SQLite database interaction via SQLModel
-
-👤 Author
-Narasimha Reddy Asam
-
-GitHub: @Narasimha722
-
-LinkedIn: in/narasimha-reddy-asam-22m
