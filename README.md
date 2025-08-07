@@ -98,6 +98,7 @@ Visit the app in your browser at:
 
 ![App Screenshot](assets/FastAPI_Todo_Homepage.png)
 
+
 🧪 Features Overview
 ------------------------------
 Add task with ID + title
